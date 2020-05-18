@@ -12,6 +12,15 @@ class FinanceDto:
 
     })
 
+    customer_update = api.model('update customer_details', {
+        'first_name': fields.String(required=True, description='user email address'),
+        'last_name': fields.String(required=True, description='user password'),
+        'email': fields.String(required=True, description='user password'),
+        'company': fields.String(required=True, description='user password'),
+        'customerId': fields.String(required=True, description='user password')
+
+    })
+
 
 
     payment_method = api.model('payment method', {
